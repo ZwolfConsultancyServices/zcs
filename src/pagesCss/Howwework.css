@@ -1,0 +1,46 @@
+.section-how-we-work .small-img {
+    width: 100px; 
+    height: 100px; 
+  }
+  
+  .animated-border {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #ddd;
+    border-radius: 10px; 
+  }
+  .arrow-animation {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px; 
+    height: 50px; 
+    background-color: #ffa500;
+    clip-path: polygon(100% 50%, 0 0, 0 100%);
+    animation: arrow-move 4s infinite;
+  }
+  
+  @keyframes arrow-move {
+    0% {
+        left: 0;
+    }
+    100% {
+        left: 100%;
+    }
+  }
+  
+  
+  
+  .animate-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+
+
+  .animated-border .card-body {
+    position: relative;
+    z-index: 2;
+    background: white;
+    border-radius: 10px;
+  }

@@ -1,0 +1,112 @@
+:root {
+    --navbar-height: 60px;
+}
+
+/* Navigation Main Styles */
+.nav-main {
+    background: transparent;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-main.scrolled,
+.nav-main.expanded {
+    background-color: #202020;
+    color: white;
+}
+
+/* For routes other than home, always black */
+.nav-main.black {
+    background-color: #202020;
+    color: white;
+}
+
+.nav-main .navbar-brand span {
+    transition: transform 0.3s;
+    margin-left: -10px;
+    color: white;
+}
+
+.nav-main .navbar-brand img {
+    transition: transform 0.3s;
+}
+
+.nav-main .navbar-brand span,
+.nav-main .navbar-brand img {
+    transition: color 0.3s, transform 0.3s;
+}
+
+.nav-main.scrolled .navbar-brand span,
+.nav-main.expanded .navbar-brand span,
+.nav-main.scrolled .navbar-brand img,
+.nav-main.expanded .navbar-brand img {
+    color: white;
+}
+
+/* Navbar Toggler Styles */
+.navbar-toggler {
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+.navbar-toggler-custom {
+    border-color: transparent;
+}
+
+.navbar-toggler-custom .navbar-toggler-icon {
+    display: none;
+}
+
+.navbar-toggler-custom:focus,
+.navbar-toggler-custom:hover,
+.nav-main.scrolled .navbar-toggler-custom,
+.nav-main.expanded .navbar-toggler-custom {
+    color: white;
+}
+
+/* Navbar Items Styles */
+.nav-items .nav-link {
+    color: white;
+    transition: color 0.3s;
+}
+
+.nav-items .nav-link:hover {
+    color: #ddd;
+}
+
+/* Main List Item Hover Effect */
+.main-li:hover {
+    border-bottom: 3.5px solid #1660d6;
+    color: #ffa500 !important;
+    font-weight: 700;
+}
+
+.nav-items .nav-link {
+    text-decoration: none; /* Remove underline */
+}
+
+/* Responsive Styles */
+@media (max-width: 991px) {
+    .navbar-collapse.collapsing,
+    .navbar-collapse.show {
+        overflow: hidden;
+    }
+
+    /* Ensure span tag is visible on smaller screens */
+    .navbar-brand span {
+        display: block !important;
+        font-size: 1rem; /* Adjust the font size if necessary */
+    }
+}
+
+@media (max-width: 320px) {
+    /* Ensure the navbar toggler is visible on screens smaller than 366px */
+    .navbar-toggler {
+        display: block;
+    }
+
+    /* Adjust the span font size for very small screens */
+    .navbar-brand span {
+        font-size: 0.9rem; /* Adjust the font size if necessary */
+    }
+}

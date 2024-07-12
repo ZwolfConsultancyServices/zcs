@@ -1,0 +1,135 @@
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.slide-in-left {
+    animation: slideInLeft 2s ease-in-out;
+}
+
+.slide-in-right {
+    animation: slideInLeft 2s ease-in-out;
+}
+
+.service-detail img {
+    max-width: 90% !important;
+    height: auto;
+    border-radius: 8px;
+    padding-top: 76px;
+    
+}
+.service-detail {
+    min-height: 100vh; 
+  }
+
+  .containerr{
+    overflow: hidden;
+  }
+
+.service-detail p {
+    font-size: 0.9rem;
+    width: 100%;
+   
+    /* z-index: 1; */
+    animation: slideInRight 2s ease-in-out;
+}
+
+.details-background {
+    position: relative;
+    padding: 60px; 
+    background-image: url('/public/shape.svg'); 
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #6a504f; 
+    color: #fff;
+    font-size: 0.9rem;
+    border-radius: 50px;
+    
+}
+.details-background::before {
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at center, #ffffff, transparent);
+    transform: rotate(150deg);
+    opacity: 0.3;
+}
+
+.details-background::after {
+    content: '“';
+    position: absolute;
+    top: -40px;
+    left: 20px;
+    font-size: 8rem;
+    color: rgba(0, 0, 0, 0.1);
+}
+
+.title {
+    position: relative;
+    display: inline-block;
+    background-color: #ffa500;
+    color: white;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.title::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -20px;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-left: 20px solid #ffa500;
+    border-top: 37px solid transparent;
+    border-bottom: 37px solid transparent;
+}
+
+.btn{
+    cursor: pointer;
+    
+}
+@media (max-width: 992px) {
+    .service-detail img {
+      max-width: 100%; 
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .service-detail img {
+      max-width: 100%;
+      padding-top: 0px ; 
+    }
+  
+    .title {
+      font-size: 1.5rem; 
+    }
+  
+    .details-background {
+      padding: 15px; 
+    }
+  }
+  

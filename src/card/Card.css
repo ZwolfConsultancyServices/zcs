@@ -1,0 +1,29 @@
+.card {
+    text-align: center;
+    padding: 35px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    transition: transform 0.3s ease;
+    overflow: hidden;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .card-image {
+    width: 100%;
+    height: auto;
+    max-height: 200px; /* Adjust as needed */
+    object-fit: cover; /* Ensures the image covers the entire area */
+    border-radius: 8px; /* Rounded corners for the image */
+  }
+  
+  .card h3 {
+    font-size: 12px !important;
+    color: #333;
+    padding-top: 8px;
+  }
+  

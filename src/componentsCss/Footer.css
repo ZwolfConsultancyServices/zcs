@@ -1,0 +1,36 @@
+
+h3 {
+    font-size: 1.3rem !important; /* Adjust the font size as needed */
+  }
+  .container {
+    overflow-x: hidden; /* Example to hide horizontal overflow */
+    overflow-y: auto; /* Enable vertical scroll if needed */
+}
+  .footer-main {
+    padding: 20px 0;
+  }
+  
+  .footer-main p {
+    margin: 0.5rem ;
+    font-size: 0.9rem;
+  }
+  
+  .social-icons a {
+    transition: transform 0.2s ease-in-out;
+    margin:  10px;
+
+  }
+  
+  .social-icons a:hover {
+    transform: translateY(-5px);
+  }
+ 
+  .fff{
+    margin: 0.3rem 0;
+    font-size: 0.9rem;
+  }
+  .texxy{
+    text-align: justify !important;
+  }
+  
+ 

@@ -1,0 +1,38 @@
+.review-section {
+    padding: 2rem 0;
+  }
+  
+  .testimonial-wrapper {
+    padding: 1rem;
+  }
+  
+  .testimonial-card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .testimonial-card:hover{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  }
+  
+  .testimonial-card.active {
+    border: 2px solid #007bff;
+  }
+  
+  .testimonial-image {
+    width: 80px;
+    height: 80px;
+  }
+  
+  .testimonial-text {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .testimonial-name {
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+  

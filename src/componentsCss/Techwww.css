@@ -1,0 +1,45 @@
+/* Techwww.css */
+
+.tech-list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;  /* Prevent wrapping to ensure a single line */
+    overflow-x: auto;  /* Enable horizontal scrolling if content overflows */
+    white-space: nowrap;  /* Prevent text from breaking to a new line */
+    justify-content: flex-start; /* Adjust alignment as needed */
+  }
+  
+  .tech-button {
+    font-size: 1.1rem;
+    font-weight: bold;
+    background: none;
+    border: none;
+    padding: 8px 12px; /* Adjust padding as needed */
+    cursor: pointer;
+    color: #1660d6;
+    transition: transform 0.3s ease-in-out;
+    flex-shrink: 0;  /* Prevent buttons from shrinking */
+    margin-right: 10px; /* Add margin between buttons */
+  }
+  
+  .tech-button.hovered {
+    transform: scale(1.1);
+  }
+  
+  @media (min-width: 768px) {
+    .tech-list {
+      justify-content: center;
+      overflow-x: visible;  /* Remove horizontal scrolling on larger screens */
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .tech-button {
+      font-size: 1rem;
+      padding: 6px 10px; /* Adjust padding for smaller screens */
+      margin-right: 8px; /* Adjust margin for smaller screens */
+    }
+  }
+  

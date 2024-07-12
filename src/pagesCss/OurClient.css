@@ -1,0 +1,48 @@
+.client-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  overflow: hidden;
+  flex: 0 0 auto;
+}
+
+.client-image {
+  width: 100%;
+  object-fit: contain; /* Contain image within the card */
+}
+
+.carousel-container {
+  padding-top: 30px;
+  max-width: 1350px;
+  margin: 0 auto; /* Center the carousel container */
+}
+
+.carousel-item-padding-40-px {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/* Ensure cards are centered on mobile devices */
+@media (max-width: 464px) {
+  .carousel-item-padding-40-px {
+      display: flex;
+      justify-content: center;
+  }
+  .client-card {
+      width: 200px !important; /* Adjust the width for mobile devices */
+      height: auto; /* Allow height to adjust automatically */
+  }
+}
+
+/* Adjust size for tablets */
+@media (max-width: 1024px) {
+  .client-card {
+      width: 250px; /* Reduce the width for tablets */
+      height: auto; /* Allow height to adjust automatically */
+  }
+}
